@@ -1,0 +1,412 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Jekyll</title>
+
+  <link rel="stylesheet" href="./css/reset.css" type="text/css"/>
+  <link rel="stylesheet" href="./css/showoff.css" type="text/css"/>
+
+  <script type="text/javascript" src="./js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="./js/jquery-print.js"></script>
+  <script type="text/javascript" src="./js/jquery.batchImageLoad.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.doubletap-0.1.js"></script>
+
+  <script type="text/javascript" src="./js/fg.menu.js"></script>
+  <script type="text/javascript" src="./js/showoff.js"></script>
+  <script type="text/javascript" src="./js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src="./js/sh_main.min.js"></script>
+  <script type="text/javascript" src="./js/core.js"></script>
+  <script type="text/javascript" src="./js/showoffcore.js"></script>
+
+  <link type="text/css" href="./css/fg.menu.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/theme/ui.all.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/sh_style.css" rel="stylesheet" >
+
+  
+    <link rel="stylesheet" href="file/jekyll.css" type="text/css"/>
+  
+
+  
+
+  <script type="text/javascript">
+  $(function(){
+    setupPreso(false, './');
+  });
+  </script>
+</head>
+
+<body>
+
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+
+<div id="help">
+  <table>
+    <tr><td class="key">space, &rarr;</td><td>next slide</td></tr>
+    <tr><td class="key">&larr;</td><td>previous slide</td></tr>
+    <tr><td class="key">d</td><td>debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">z</td><td>toggle help (this)</td></tr>
+  </table>
+</div>
+
+<div class="buttonNav">
+  <input type="submit" onClick="prevStep();" value="prev"/>
+  <input type="submit" onClick="nextStep();" value="next"/>
+</div>
+
+<div id="preso">loading presentation...</div>
+<div id="footer">
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+  <span id="notesInfo"></span>
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<div class="slide" data-transition="none"><div class="content" ref="intro/01_title">
+<h1>Jekyll</h1>
+
+<h2>Tim Gourley - OK.rb</h2>
+
+<h2>February 10, 2011</h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/02_history/1">
+<h1>History</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="intro/02_history/2">
+<h1>Origins of Blogging</h1>
+
+<ul>
+<li>Before HTTP, there was Usenet</li>
+<li>John Carmack's journal (via finger)</li>
+<li>Tim Berners-Lee and http://info.cern.ch</li>
+<li>Other personal homepages with "What's New" or "News" sections</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/02_history/3">
+<h1>The Revolution</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental small" ref="intro/02_history/4">
+<h1>Evolution</h1>
+
+<ul>
+<li>1997: Jorn Barger coins "weblog" meaning "logging the web", using
+David Winer's Frontier software.</li>
+<li>1997: David Winer creates scriptingNews format for syndication</li>
+<li>1999: Peterme.com jokingly separates "weblog" to "we blog".</li>
+<li>1999: Advogato, Open Diary, LiveJournal, and Pitas.com launch.</li>
+<li>1999: Evan Williams &amp; Meg Hourihan launch Blogger</li>
+<li>1999: Netscape creates RSS. David Winer improves it.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/02_history/5">
+<h1>My Involvement</h1></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="intro/02_history/6">
+<p><img src="file:///Users/mreider/jekyll-presentation/intro/nph.jpg" alt="nph"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/02_history/7">
+<h1>Thatware</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="blog_features/features/1">
+<h1>Modern Blogging</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="blog_features/features/2">
+<h1>Dynamic systems and Services</h1>
+
+<ul>
+<li>Wordpress</li>
+<li>Movable Type</li>
+<li>Mephisto and Radiant</li>
+<li>Tumblr and Posterous</li>
+<li>A million others...</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="blog_features/features/3">
+<h1>Features</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="blog_features/features/4">
+<h1>Common Features</h1>
+
+<ul>
+<li>Posts</li>
+<li>Comments</li>
+<li>Categories</li>
+<li>Tags</li>
+<li>Syndication</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="blog_features/features/5">
+<h1>Common Problems</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="blog_features/features/6">
+<h1>Common Problems</h1>
+
+<ul>
+<li>Security</li>
+<li>Comment spam</li>
+<li>Templating difficulties</li>
+<li>Dynamic sites fall to traffic</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="jekyll/01_getting_started/1">
+<h1>Jekyll</h1></div>
+</div><div class="slide" data-transition="none"><div class="content code" ref="jekyll/01_getting_started/2">
+<h1>Installation</h1>
+
+<pre><code>$ gem install jekyll
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content code" ref="jekyll/01_getting_started/3">
+<h1>The Common Layout</h1>
+
+<pre><code>|-- _config.yml
+|-- _layouts
+|   |-- default.html
+|   `-- post.html
+|-- _posts
+|   |-- 2011-01-29-first-post.textile
+|   `-- 2011-02-10-jekyll-rules.markdown
+|-- _site
+`-- index.html
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="jekyll/01_getting_started/4">
+<h1>Blog feature: Posts</h1>
+
+<ul>
+<li>Posts are flat text files in the <em>_posts</em> directory</li>
+<li>Format is: YYYY-MM-DD-title-of-the-post.FORMAT</li>
+<li>Can use: Markdown, Textitle, HTML, or define your own</li>
+<li>Metadata is set by YAML front-matter</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content code" ref="jekyll/01_getting_started/5">
+<h1>Sample Markdown Post</h1>
+
+<pre><code>---
+layout: post
+title: Like a boss
+---
+This post is brought to you 
+by the power of love.
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content full-explanation" ref="jekyll/01_getting_started/6">
+<p>Any jekyll-recognized file (i.e. .html, .markdown, .textile) in your
+project will be parsed by jekyll if it contains the YAML front-matter.</p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental small" ref="jekyll/01_getting_started/7">
+<h1>Other Features</h1>
+
+<ul>
+<li><em>Comments:</em></li>
+<li>Use a service such as Disqus</li>
+<li><em>Categories:</em></li>
+<li>Possible in Jekyll through YAML front-matter</li>
+<li><em>Tags:</em></li>
+<li>http://www.justkez.com/generating-a-tag-cloud-in-jekyll</li>
+<li><em>What about Syndication?</em></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="jekyll/01_getting_started/8">
+<h1>Syndication</h1>
+
+<ul>
+<li>Generate your own Atom/RSS feed</li>
+<li>Create an xml file and use Liquid to loop over the posts</li>
+<li>For example, Geek Writer's feed/index.xml file:</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content code smaller" ref="jekyll/01_getting_started/9">
+<pre class="sh_xml"><code>---
+layout: nil
+---
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;feed xmlns="http://www.w3.org/2005/Atom"&gt;
+
+  &lt;title&gt;Geek Writers&lt;/title&gt;
+  &lt;link href="http://www.geekwriters.net/feed/" rel="self" /&gt;
+  &lt;link href="http://www.geekwriters.net/" /&gt;
+  &lt;updated&gt;{{ site.time | date_to_xmlschema }}&lt;/updated&gt;
+  &lt;id&gt;http://www.geekwriters.net/&lt;/id&gt;
+  &lt;author&gt;
+    &lt;name&gt;Tim Gourley&lt;/name&gt;
+    &lt;email&gt;tgourley@gmail.com&lt;/email&gt;
+  &lt;/author&gt;
+
+  {% for post in site.posts %}
+  &lt;entry&gt;
+    &lt;title&gt;{{ post.title }}&lt;/title&gt;
+    &lt;link href="http://www.geekwriters.net{{ post.url }}" /&gt;
+    &lt;updated&gt;{{ post.date | date_to_xmlschema }}&lt;/updated&gt;
+    &lt;id&gt;http://www.geekwriters.net{{ post.id }}&lt;/id&gt;
+    &lt;content type="html"&gt;{{ post.content | xml_escape }}&lt;/content&gt;
+  &lt;/entry&gt;
+  {% endfor %}
+
+&lt;/feed&gt;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="jekyll/02_layouts_and_liquid/1">
+<h1>Layouts</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="jekyll/02_layouts_and_liquid/2">
+<ul>
+<li>Found in your _layouts directory</li>
+<li>"Partial templates" mimicked by having layouts use other layouts</li>
+<li>Uses liquid for easy templating</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content code smaller" ref="jekyll/02_layouts_and_liquid/3">
+<pre class="sh_html"><code>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;All About Badgers&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;All About Badgers&lt;/h1&gt;
+
+    {{ content }}
+
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="jekyll/02_layouts_and_liquid/4">
+<h1>Liquid</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="jekyll/02_layouts_and_liquid/5">
+<h1>Liquid Template Engine</h1>
+
+<ul>
+<li>Part of Shopify</li>
+<li><a href="http://www.liquidmarkup.org/">http://www.liquidmarkup.org/</a></li>
+<li>Simple, beautiful, non-evaling, secure</li>
+<li>Great for designers</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content code smaller" ref="jekyll/02_layouts_and_liquid/6">
+<pre><code>Hello {{name}}
+
+{% if user %}
+  Hello, {{user.name}}
+{% endif %}
+
+{% for item in array %}
+  Found: {{item}}
+{% endfor %}
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="jekyll/03_extending/1">
+<h1>Extending Jekyll</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="jekyll/03_extending/2">
+<h1>Plugins</h1>
+
+<ul>
+<li>Generators: create additional content</li>
+<li>Convertors: new markup languages</li>
+<li>Tags: custom tags for liquid (eg. highlight, include)</li>
+<li>Place them in the _plugins directory</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content code smaller" ref="jekyll/03_extending/3">
+<pre class="sh_ruby"><code>require 'sass'
+module Jekyll
+  class ScssConverter &lt; Converter
+    safe true
+    priority :low
+
+    def matches(ext)
+      ext =~ /scss/i
+    end
+
+    def output_ext(ext)
+      ".css"
+    end
+
+    def convert(content)
+      engine = Sass::Engine.new(content, 
+                                :syntax =&gt; :scss, 
+                                :style  =&gt; :compressed)
+      engine.render
+    end
+  end  
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="jekyll/04_running_deploying/1">
+<h1>Running Jekyll</h1></div>
+</div><div class="slide" data-transition="none"><div class="content code" ref="jekyll/04_running_deploying/2">
+<pre class="sh_sh"><code># To generate your site in _site/
+# Uses defaults if no args specified
+$ jekyll &lt;source path&gt; &lt;output path&gt;
+
+# To start jekyll on port 4000
+$ jekyll --server</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="jekyll/04_running_deploying/3">
+<h1>Deployment</h1></div>
+</div><div class="slide" data-transition="none"><div class="content code small" ref="jekyll/04_running_deploying/4">
+<h1>Set up a remote repo</h1>
+
+<pre class="sh_sh"><code>$ ssh deploy@slaggle.com
+slaggle$ mkdir myrepo.git
+slaggle$ cd myrepo.git
+slaggle$ git --bare init
+slaggle$ cp hooks/post-receive.sample hooks/post-receive
+slaggle$ mkdir -p /data/myapp</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content code smaller" ref="jekyll/04_running_deploying/5">
+<pre class="sh_sh"><code># Create a post-recieve hook
+
+GIT_REPO=$HOME/myrepo.git
+TMP_GIT_CLONE=$HOME/tmp/myrepo
+PUBLIC_WWW=/data/myapp
+
+git clone $GIT_REPO $TMP_GIT_CLONE
+jekyll --no-auto $TMP_GIT_CLONE $PUBLIC_WWW
+rm -Rf $TMP_GIT_CLONE
+exit</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content code small" ref="jekyll/04_running_deploying/6">
+<h1>Deploy</h1>
+
+<pre class="sh_sh"><code>$ git remote add deploy deploy@slaggle.com:~/myrepo.git
+$ git push deploy master</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="jekyll/04_running_deploying/7">
+<h1>BONUS: FeedBurner</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="jekyll/04_running_deploying/8">
+<h1>Why FeedBurner?</h1>
+
+<ul>
+<li>Viewing stats</li>
+<li>Easy-ish to implement</li>
+<li>Portability</li>
+<li>Customizing your feed</li>
+<li>Notification</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="jekyll/04_running_deploying/9">
+<p><img src="file:///Users/mreider/jekyll-presentation/jekyll/feedburner.jpg" alt="feedburner"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content code smaller" ref="jekyll/04_running_deploying/10">
+<pre><code>location /feed {
+    index index.xml;
+
+    # Feedburner redirect
+    set $feed_redirect 'http://feeds.feedburner.com/your-site/WnKh';
+    if ($http_user_agent ~* "FeedBurner") {
+        set $feed_redirect '';
+    }
+    if ($http_user_agent ~* "FeedValidator") {
+        set $feed_redirect '';
+    }
+    if ($feed_redirect ~* "^(.+)$") {
+        rewrite ^ $feed_redirect? permanent;
+    }
+}
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="post/links">
+<h1>Links</h1>
+
+<ul>
+<li>Geek Writers - <a href="http://www.geekwriters.net">http://www.geekwriters.net</a></li>
+<li>Source - <a href="https://github.com/bratta/geekwriters">https://github.com/bratta/geekwriters</a></li>
+</ul>
+
+
+<hr/>
+
+
+<ul>
+<li>Presentation: <a href="https://github.com/bratta/jekyll-presentation">https://github.com/bratta/jekyll-presentation</a></li>
+<li>On the web: <a href="http://okrb-jekyll.heroku.com">http://okrb-jekyll.heroku.com</a></li>
+</ul>
+</div>
+</div></div>
+
+</body>
+</html>
